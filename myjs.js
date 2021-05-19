@@ -6,7 +6,7 @@ function start() {
 
     function run() {
 
-        if (m = 1200) {
+        if (m == 1200) {
             clearInterval(y);
             m = 0;
 
