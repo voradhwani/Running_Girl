@@ -5,9 +5,16 @@ function start() {
     y = setInterval(run, 50);
 
     function run() {
-        m += 5;
-        var x = document.getElementById("img");
-        x.style.marginLeft = m + "px";
+
+        if (m = 1200) {
+            clearInterval(y);
+            m = 0;
+
+        } else {
+            m += 5;
+            var x = document.getElementById("img");
+            x.style.marginLeft = m + "px";
+        }
     }
 }
 
