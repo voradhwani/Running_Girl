@@ -1,0 +1,31 @@
+#back{
+    background: url(scene.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 450px;
+}
+
+#road{
+    background:url(road.jpg);
+}
+
+#img{
+    width: 150px;
+}
+
+#btn{
+    background-color: rgb(238, 148, 14);
+    width: 100px;
+    font-size: larger;
+    margin-top: 30px;
+    border-radius: 5px;
+    border-color:  whitesmoke;
+}
+
+#dbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
