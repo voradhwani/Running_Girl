@@ -1,6 +1,6 @@
 m = 0;
-var y;
-var audio = document.getElementById("audio");
+let y;
+let audio = document.getElementById("audio");
 
 function start() {
     y = setInterval(run, 50);
@@ -20,16 +20,30 @@ function start() {
 
         } else {
             m += 5;
-            var img = document.getElementById("img");
+            let img = document.getElementById("img");
             img.style.marginLeft = m + "px";
         }
     }
 }
 
 function stop() {
-    clearInterval(y);
+    y = clearInterval(y);
     audio.pause();
     document.getElementById("stop-btn").disabled = true;
     document.getElementById("start-btn").disabled = false;
 
 }
+
+document.onkeyup = function (e) {
+    switch (e.key) {
+        case " " :
+            // running => stop 
+            if(y){
+                stop();
+            }
+            else{
+                start();
+            }
+            break;
+    }
+  }
