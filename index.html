@@ -10,10 +10,13 @@
 </head>
 
 <body>
+    <audio id="audio">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
     <div id="back">
         <div id="dbtn">
-            <button id="btn" onclick="start()">Start</button>
-            <button id="btn" onclick="stop()">Stop</button>
+            <button class="btn" id="start-btn" onclick="start()">Start</button>
+            <button class="btn" id="stop-btn" onclick="stop()">Stop</button>
         </div>
     </div>
     <div id="road">
